@@ -1,0 +1,72 @@
+# Nothing that belongs to the game ever goes in here. Blocked by extension, so it cannot slip in
+# by accident, and not as a substitute for reading NOTICE.md.
+
+# ROMs and dumps
+*.z64
+*.v64
+*.n64
+*.rom
+*.bin
+*.iso
+baserom*
+
+# executables, debug info and packages
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.obj
+*.lib
+*.a
+*.msix
+*.msixbundle
+*.appx
+*.appxbundle
+*.appxsym
+*.appxupload
+
+# signing certificates: yours is yours
+*.pfx
+*.p12
+*.cer
+*.snk
+
+# saves, states and logs the console writes
+*.sav
+*.srm
+*.state
+save/
+saves/
+registro.txt
+diagnostico.txt
+*.dmp
+
+# leftovers of a game tree, in case this is cloned inside one
+build/
+build-*/
+_deps/
+contenido/
+compile_commands.json
+
+# The package tiles are supplied by whoever packages (docs/ASSETS.md); no game art is
+# distributed here. The folder itself is kept by its README.
+package/Assets/*
+!package/Assets/README.md
+!package/Assets/README.es.md
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# editors and OS
+.vs/
+.vscode/
+.idea/
+*.swp
+*.log
+*.tmp
+Thumbs.db
+desktop.ini
+.DS_Store

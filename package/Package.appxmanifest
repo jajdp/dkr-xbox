@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  IgnorableNamespaces="uap mp rescap">
+
+  <!-- CAMBIA LAS DOS PRIMERAS LINEAS POR LAS TUYAS antes de empaquetar.
+
+       Publisher tiene que ser IDENTICO al sujeto de tu certificado de firma (docs/INSTALL.md
+       seccion 3). Si no coinciden, la consola rechaza el paquete; package_uwp.py lo comprueba
+       antes de empaquetar y te lo dice.
+
+       Name es el nombre interno del paquete. Con el Publisher forma la FAMILIA, que es como la
+       consola reconoce al juego y de la que cuelgan sus partidas: cambiarlo mas adelante crea
+       otro juego a ojos de la consola, con sus partidas en blanco, y el viejo sigue instalado
+       aparte. Eligelo una vez y dejalo.
+
+       Version se queda en 0.1.0.0 SIEMPRE: la pone package_uwp.py al empaquetar, buscando ese
+       texto exacto. Si la cambias aqui, el reemplazo no ocurre y no avisa. -->
+  <Identity
+    Name="CHANGE-ME-DiddyKongRacing"
+    Publisher="CN=CHANGE-ME"
+    Version="0.1.0.0"
+    ProcessorArchitecture="x64" />
+
+  <mp:PhoneIdentity PhoneProductId="8c41f7d2-5a93-4e16-b0c8-2d7e4a9f1b55" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>Diddy Kong Racing Decomp</DisplayName>
+    <PublisherDisplayName>CHANGE-ME</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.19041.0" MaxVersionTested="10.0.26100.0" />
+    <!-- De aqui salen MSVCP140_APP y vccorlib140_app, que piden libuwp.dll y SDL2.dll -->
+    <PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.33519.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="en-us"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+      Executable="mdkr64.exe"
+      EntryPoint="uwp.App">
+      <!-- Solo sq y ss. El mosaico Wide310x150 no se declara a proposito: en modo desarrollador
+           la consola no lo muestra nunca, asi que declararlo obligaria a mantener dos imagenes
+           mas que nadie llega a ver. Criterio comun a todos los ports de esta carpeta. -->
+      <uap:VisualElements
+        DisplayName="Diddy Kong Racing Decomp"
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png"
+        Description="Port UWP de Diddy Kong Racing (decomp Golden Balloon) para Xbox Series X en modo desarrollador"
+        BackgroundColor="transparent">
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust"/>
+    <rescap:Capability Name="broadFileSystemAccess" />
+    <rescap:Capability Name="expandedResources" />
+    <Capability Name="internetClient" />
+    <Capability Name="internetClientServer"/>
+    <Capability Name="privateNetworkClientServer"/>
+    <Capability Name="codeGeneration"/>
+    <uap:Capability Name="removableStorage"/>
+  </Capabilities>
+</Package>
