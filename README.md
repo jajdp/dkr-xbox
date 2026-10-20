@@ -1,14 +1,27 @@
 # Diddy Kong Racing on Xbox — the UWP port
 
 How to take [Golden Balloon](https://github.com/akratch/goldenballoon), the native source port of
-*Diddy Kong Racing* (N64, 1997), and run it **on an Xbox Series in Developer Mode**, as a UWP
+*Diddy Kong Racing* (N64, 1997), and run it **on an Xbox Series X in Developer Mode**, as a UWP
 package you build and sign yourself.
 
 *(Español: [README.es.md](README.es.md))*
 
 No UWP build of this game existed, so the port was written from scratch: there is no second CMake
-project and no duplicated tree. It plays — intro, menus, adventure mode, Taj's first challenge
-won with a controller.
+project and no duplicated tree.
+
+And it is not a demo that reaches the title screen: **the game has been finished on the console** —
+Adventure mode, the mirrored second run through it, and Tracks. That is every mode the game has, all
+of it played to the end with a controller, so it is playable from start to finish.
+
+## Which console this was tested on
+
+**An Xbox Series X**, in Developer Mode. Both of the consoles this was built and tested on are Series X,
+so that is the only hardware anything claimed here covers.
+
+**A Series S has never been tried — not once.** It is a different machine: less memory available to a
+game and a weaker GPU. This may work on one, it may run slower, or it may not start at all; nothing here
+has been measured on it. If you run it on a Series S, what you get is not what this README reports, and
+none of the numbers here are a promise about that console.
 
 ## What this repository is
 

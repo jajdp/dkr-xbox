@@ -2,7 +2,7 @@
 
 *(English: [INSTALL.md](INSTALL.md))*
 
-De principio a fin: de una copia limpia de Golden Balloon al juego corriendo en una Xbox Series
+De principio a fin: de una copia limpia de Golden Balloon al juego corriendo en una Xbox Series X
 en modo desarrollador.
 
 **Lo que tarda cada paso**, medido en la máquina donde se probó (un sobremesa reciente; en la tuya

@@ -2,7 +2,7 @@
 
 *(Español: [INSTALL.es.md](INSTALL.es.md))*
 
-Start to finish: from a clean checkout of Golden Balloon to the game running on an Xbox Series in
+Start to finish: from a clean checkout of Golden Balloon to the game running on an Xbox Series X in
 Developer Mode.
 
 **How long each step takes**, measured on the machine this was tested on (a recent desktop; your

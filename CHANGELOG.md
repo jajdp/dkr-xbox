@@ -6,6 +6,20 @@ The versions here are **the repository's**, not the package's. The package versi
 pass to `package_uwp.py --version`, and it has to go up on every package you install, because the
 console will not replace a package with one of the same version.
 
+## [1.1.0] — 2026-10-20
+
+### Changed
+
+- **The game has been finished on the console, in every mode it has.** Adventure mode, the mirrored
+  second run through it, and Tracks — all of them played to the end with a controller on an Xbox
+  Series X. The README used to claim far less (intro, menus, and Taj's first challenge won), because
+  that was everything that had been played when it was written. Nothing in the recipe changed for
+  this: what changed is what is known about what it produces.
+- **The README now says which console this was tested on, and which one it was not.** Everything here
+  was built and measured on an **Xbox Series X** in Developer Mode; a **Series S has never been tried**,
+  so nothing here says anything about one. The wording used to say "Xbox Series", which reads as if it
+  covered both, and it does not.
+
 ## [1.0.3] — 2026-10-13
 
 ### Added
