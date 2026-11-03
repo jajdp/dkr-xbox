@@ -97,7 +97,7 @@ CAMBIOS = [
     '         * no la nomenclatura WGPUSurfaceSource* del resto de este bloque. Buscar\n'
     '         * solo la nueva lleva a concluir, en falso, que Dawn no soporta UWP.\n'
     '         * Verificado contra el webgpu.h de uwp-dep, que es el Dawn con el que se\n'
-    '         * enlaza, y contra otro port UWP que ya usa ese mismo Dawn. */\n'
+    '         * enlaza. */\n'
     '        WGPUSurfaceDescriptorFromWindowsCoreWindow cw = {0};\n'
     '        cw.chain.sType = WGPUSType_SurfaceDescriptorFromWindowsCoreWindow;\n'
     '        cw.coreWindow = window_handle;\n'

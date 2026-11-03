@@ -15,7 +15,7 @@ Que lleva el paquete, y por que:
 
 MSVCP140_APP, vccorlib140_app y VCRUNTIME140_APP **no** van dentro: llegan por la dependencia
 Microsoft.VCLibs.140.00 que declara el manifiesto. Meterlas dentro del paquete hace que se
-instale y no arranque (0x8027025B, comprobado con otro port de la casa).
+instale y no arranque (0x8027025B, comprobado en consola).
 
 ⚠ LA ROM SE VERIFICA AQUI, en el PC, no en la consola. Si se colara la revision equivocada el
 juego arrancaria en la Xbox y moriria con un mensaje que nadie puede leer. La huella de referencia
