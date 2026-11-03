@@ -121,6 +121,20 @@ de 5.829.120 — la marca de tiempo del enlace y el GUID de depuración. Ver
 
 ## Créditos y licencia
 
+**Casi nada de lo que hace que esto funcione es nuestro.** Este repositorio es una receta que une el trabajo de otros; sin cualquiera de estas piezas no habría port.
+
+| Qué hace | Quién lo hizo | Licencia |
+|---|---|---|
+| **[goldenballoon](https://github.com/akratch/goldenballoon)** — el port de *Diddy Kong Racing* | **akratch** | see the project |
+| **[uwp-dep](https://github.com/worleydl/uwp-dep)** — Dawn, SDL3, nod y dxcompiler **compilados para UWP**: la única razón por la que algo de esto corre en una Xbox | **Daniel Worley** (worleydl) | libuwp: zlib, © 2025 |
+| **[SDL](https://github.com/libsdl-org/SDL)** — ventana, mando y audio | **Sam Lantinga** and the SDL contributors | zlib |
+| **[Dawn](https://dawn.googlesource.com/dawn)** — la implementación de WebGPU | **The Dawn & Tint Authors** (Google) | BSD-3-Clause |
+
+Mención especial a **Daniel Worley**: las compilaciones UWP de `uwp-dep` son lo que hace posible este port a Xbox. No las hicimos nosotros, las usamos.
+
+**La receta de empaquetado, las herramientas y esta documentación** son de **Recompilaciones**.
+
+
 Port y herramientas de **Recompilaciones**. Se publica bajo la [licencia MIT](LICENSE), la misma
 de [Golden Balloon](https://github.com/akratch/goldenballoon), el proyecto del que esto es un
 derivado.
